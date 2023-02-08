@@ -1,18 +1,11 @@
-# Chapter 5
+# Chapter 7
 
-This chapter focused on applying optimization techniques to improve the performance of the previous sample project.
-
-## Home (Posts)
-![Posts](./public/screen-capture-1.png)
-
-## Users
-![Users](./public/screen-capture-2.png)
-
-## User's Posts
-![Users's Posts](./public/screen-capture-3.png)
-
+This chapter focused on refactoring the previous Blog project (from Chapter 5) to use RTK Query.
 
 Topics covered:
-* Use of `createEntityAdapter` to define an entity with predefined methods
-* Use of `createSelector` to create memoized selectors
-* Use of `getSelectors` to generate selectors by the created entity
+* State normalization (ids and entities)
+* Use of `createApi` to create an API slice
+* Use of `injectEndpoints` to build endpoints which will be generated as custom Hooks
+* Use of `query` and `mutation` for CRUD operations
+* Providing and invalidating tags for auto re-fetching
+* Optimistic updates for immediate UI response
